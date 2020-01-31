@@ -60,12 +60,13 @@
     </header>
 
     <main>
-       <h1>Техномарт</h1>
+      
+      <h1 class="visually-hidden">Техномарт</h1>
 
       <section>
-
-        <h2>Наши предложения</h2>
-      
+       <div class="visually-hidden">
+           <h2>Наши предложения</h2>
+       </div>
         <ul>
           <li>
             <h3>Материалы</h3>
@@ -306,7 +307,7 @@
       <div>
         <a><img src="img\logo.svg" width="138" height="23" alt="Логотип Техномарт"></a>
         <p>
-          г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8<br>
+          г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8
           <a href="#">+7(812)555-05-55</a>
         </p>
       </div>
@@ -367,6 +368,58 @@
 
     <section>
       <h2>Личный кабинет</h2>
+     <p>Введите свой логин и пароль.</p> 
+     <form action="" method="POST">
+       <p>
+         <label for="user-login">Логин</label>
+         <input id="user-login" type="email" name="login" placeholder="email@example.com">
+       </p>
+
+       <p>
+         <label for="user-password">Пароль</label>
+         <input id="user-password" type="password" name="password" placeholder="........">
+       </p>
+
+       <p>
+         <input type="checkbox" name="remember" id="login-password-info">
+         <label for="login-password-info">Запомните меня</label>
+         <a href="#">Я забыл пароль!</a>
+       </p>
+       <button type="submit">Войти</button>
+     </form>
+     <button type="button">Закрыть</button>
+    </section>
+
+    <section>
+     <div class="visually-hidden">
+      <h2>Форма обратной связи</h2>
+    </div>
+    <fieldset>
+    <form action="" method="POST">
+      <p>
+       
+        <label for="your-name">Ваше имя:</label>
+        <input id="your-name" type="text" name="your-name" placeholder="Имя">
+
+      </p>
+
+      <p>
+       
+        <label for="your-email">Ваш e-mail:</label>
+        <input id="your-email" type="email" name="your-email" placeholder="email@example.com">
+
+      </p>
+
+      <p>
+       
+        <label for="text-letters">Текст письма:</label>
+        <input id="text-letters" type="text" name="text-letters" placeholder="В свободной форме">
+
+      </p>
+      <button type="submit">Отправить</button>
+      <button type="button">Закрыть</button>
+    </form>
+    </fieldset>
     </section>
 
   </body>
