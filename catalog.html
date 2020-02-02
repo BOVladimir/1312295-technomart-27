@@ -60,17 +60,84 @@
       </ul>
 
       <h1>Перфораторы</h1>
+       
+      <section>
 
-      <div>
+      <div class="visually-hidden">
         <h2>Фильтр товаров</h2>
-        <!--Здесь будет форма-->
       </div>
 
+        <fieldset>
+       
+        <legend>Фильтр:</legend>
+        <h2>ЦЕНА:</h2>
+       
+        <div>
+          <input type="range" min="0" step="1" max="10" value="3">
+          <input type="range" min="0" step="1" max="10" value="7">
+        </div
+       
+           <div>
+                <label class="min-price"><input type="text" name="min-price" value="0"></label>
+                <label class="max-price">- <input type="text" name="max-price" value="30000"></label>
+           </div>
+                   
+         </fieldset>
+
+         <fieldset>
+           <legend>ПРОИЗВОДИТЕЛИ:</legend>
+           
+            <p>
+              <input type="checkbox" name="Bosch" id="info-Bosch" checked>
+              <label for="info-Bosch">Bosch</label> 
+            </p>
+
+            <p>
+              <input type="checkbox" name="Interskol" id="info-Interskol">
+              <label for="info-Interskol">Интерскол</label> 
+            </p>
+
+            <p>
+              <input type="checkbox" name="Makita" id="info-Makita" checked>
+              <label for="info-Makita">Makita</label> 
+            </p>
+
+            <p>
+              <input type="checkbox" name="Dewalt" id="info-Dewalt">
+              <label for="info-Dewalt">Dewalt</label> 
+            </p>
+
+            <p>
+              <input type="checkbox" name="Hitachi" id="info-Hitachi">
+              <label for="info-Hitachi">Hitachi</label> 
+            </p>
+                              
+         </fieldset>
+
+         <fieldset>
+     
+          <legend>Питание:</legend>
+
+          <p>
+            <input type="radio" name="nutrition" id="info" checked>
+            <label for="info">Аккумуляторные</label> 
+          </p>
+
+          <p>
+            <input type="radio" name="nutrition" id="info1">
+            <label for="info1">Сетевые</label> 
+          </p>
+          
+         </fieldset>
+
+         <button type="submit">Показать</button>
+
       <section>
-       <div class="visually-hidden">
+
+        <div class="visually-hidden">
         <h2>Список перфораторов</h2>
        </div>
-
+        </section>
         <div>
           <p>Сортировка:</p>
           <ul>

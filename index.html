@@ -368,7 +368,8 @@
 
     <section>
       <h2>Личный кабинет</h2>
-     <p>Введите свой логин и пароль.</p> 
+      <fieldset>
+     <legend>Введите свой логин и пароль.</legend>
      <form action="" method="POST">
        <p>
          <label for="user-login">Логин</label>
@@ -388,6 +389,7 @@
        <button type="submit">Войти</button>
      </form>
      <button type="button">Закрыть</button>
+    </fieldset>
     </section>
 
     <section>
@@ -413,7 +415,7 @@
       <p>
        
         <label for="text-letters">Текст письма:</label>
-        <input id="text-letters" type="text" name="text-letters" placeholder="В свободной форме">
+        <textarea id="text-letters"  name="text-letters" placeholder="В свободной форме" rows="4"></textarea>
 
       </p>
       <button type="submit">Отправить</button>
