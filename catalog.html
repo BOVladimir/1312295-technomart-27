@@ -63,25 +63,22 @@
        
       <section>
 
-      <div class="visually-hidden">
-        <h2>Фильтр товаров</h2>
-      </div>
-
-        <fieldset>
+       <fieldset>
        
         <legend>Фильтр:</legend>
+        <form method="GET" action="#">
         <h2>ЦЕНА:</h2>
        
         <div>
           <input type="range" min="0" step="1" max="10" value="3">
           <input type="range" min="0" step="1" max="10" value="7">
-        </div
+        </div>
        
            <div>
                 <label class="min-price"><input type="text" name="min-price" value="0"></label>
                 <label class="max-price">- <input type="text" name="max-price" value="30000"></label>
            </div>
-                   
+                  
          </fieldset>
 
          <fieldset>
@@ -131,21 +128,20 @@
          </fieldset>
 
          <button type="submit">Показать</button>
-
+        </form>
       <section>
-
-        <div class="visually-hidden">
-        <h2>Список перфораторов</h2>
-       </div>
+       
+        <h2 class="visually-hidden">Список перфораторов</h2>
+      
         </section>
         <div>
           <p>Сортировка:</p>
           <ul>
-            <li><button type="button">По цене</button></li>
-            <li><button type="button">По типу</button></li>
-            <li><button type="button">По функционалу</button></li>
-            <li><button type="button"></button></li>
-            <li><button type="button"></button></li>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По функционалу</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
           </ul>
         </div>
         <ul>
@@ -340,9 +336,9 @@
 
       <div>
         <ul>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
+          <li><a href="#" aria-label="Vkontakte"></a></li>
+          <li><a href="#" aria-label="Facebook"></a></li>
+          <li><a href="#" aria-label="instagram"></a></li>
         </ul>
       </div>
 
@@ -362,6 +358,7 @@
     </footer>
 
     <section>
+      <h2 class="visually-hidden">Скрытая форма</h2>
       <fieldset>
       <div>
         <p>
