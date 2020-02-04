@@ -8,8 +8,9 @@
     <header>
       <nav>
         <a href="index.html"><img src="img\logo.svg " width="109px" height="19px" alt="Логотип Техномарт"></a>
-        <form action="#">
-          <input type="text" placeholder="Поиск.." name="search">
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input id="search" type="text" placeholder="Поиск.." name="search">
         </form>
         <ul>
           <li><a href="#">Закладки</a></li>
@@ -65,9 +66,9 @@
 
        <fieldset>
        
-        <legend>Фильтр:</legend>
-        <form method="GET" action="#">
-        <h2>ЦЕНА:</h2>
+        <h2>Фильтр:</h2>
+       
+        <legend>ЦЕНА:</legend>
        
         <div>
           <input type="range" min="0" step="1" max="10" value="3">
@@ -358,12 +359,11 @@
     </footer>
 
     <section>
-      <h2 class="visually-hidden">Скрытая форма</h2>
+      <h2 class="visually-hidden">Корзина</h2>
       <fieldset>
       <div>
         <p>
           Товар добавлен в корзину!
-          <img src="img\icon-mark.svg" width="66" height="66">
         </p>
       </div>
 
@@ -374,7 +374,7 @@
       <div>
         <button type="button">Продолжить покупки</button>
       </div>
-      <button type="button">Закрыть</button>
+      <button type="button" aria-label="close"></button>
       </fieldset>
 
     </section>
